@@ -1,0 +1,19 @@
+{
+  "name": "Gioco dei Dadi",
+  "short_name": "Dice Game",
+  "description": "Un divertente gioco dei dadi per 2 giocatori",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait",
+  "categories": ["games", "entertainment"],
+  "lang": "it",
+  "icons": [
+    {
+      "src": "/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+  ]
+}

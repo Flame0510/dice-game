@@ -7,7 +7,7 @@ interface StartScreenProps {
 export default function StartScreen({ onStartGame }: StartScreenProps) {
   const [player1Name, setPlayer1Name] = useState('');
   const [player2Name, setPlayer2Name] = useState('');
-  const [targetScore, setTargetScore] = useState(50);
+  const [targetScore, setTargetScore] = useState(15);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

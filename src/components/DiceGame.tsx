@@ -47,14 +47,10 @@ export default function DiceGame() {
       if (action === 'add') {
         // Add to current player's score
         newState.players[newState.currentPlayerIndex].score += roll;
-        // Ensure score doesn't go below 0
-        newState.players[newState.currentPlayerIndex].score = Math.max(0, newState.players[newState.currentPlayerIndex].score);
       } else if (action === 'remove') {
         // Remove from opponent's score
         const opponentIndex = newState.currentPlayerIndex === 0 ? 1 : 0;
         newState.players[opponentIndex].score -= roll;
-        // Ensure score doesn't go below 0
-        newState.players[opponentIndex].score = Math.max(0, newState.players[opponentIndex].score);
       }
 
       // Check for win condition

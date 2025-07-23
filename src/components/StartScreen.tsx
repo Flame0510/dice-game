@@ -33,7 +33,7 @@ export default function StartScreen({ onStartGame }: StartScreenProps) {
               id="player1"
               value={player1Name}
               onChange={(e) => setPlayer1Name(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-700"
               placeholder="Inserisci nome"
               required
             />
@@ -48,7 +48,7 @@ export default function StartScreen({ onStartGame }: StartScreenProps) {
               id="player2"
               value={player2Name}
               onChange={(e) => setPlayer2Name(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-700"
               placeholder="Inserisci nome"
               required
             />
@@ -63,7 +63,7 @@ export default function StartScreen({ onStartGame }: StartScreenProps) {
               id="target"
               value={targetScore}
               onChange={(e) => setTargetScore(parseInt(e.target.value) || 0)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-700"
               min="1"
               max="200"
               required
